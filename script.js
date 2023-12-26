@@ -62,10 +62,18 @@ function help() {
     printCommand("echo", "echo the input");
     printCommand("clear", "clear the terminal");
     printCommand("exit", "exit the terminal");
+    printCommand("credits", "show credits");
     
 }
 function about(){
-    term.echo("Hi, I'm Jan Thomas Müller - a deep learning and computer vision researcher from Germany. This is my personal website, where I want to share my projects and ideas with you.")
+    term.echo("Hi, I'm Jan Thomas Müller - a deep learning and computer vision researcher from Germany. This is my personal website, where I want to share my projects and ideas with you.");
+}
+
+function credits(){
+    term.echo("This website is based on the [[b;#fff;]jQuery Terminal Emulator] and the corresponding vintage style from [[b;#fff;]CodePen] by [[b;#fff;]jcubic].");
+    printCommand("Terminal","https://terminal.jcubic.pl/");
+    printCommand("CodePen","https://codepen.io/jcubic/pen/BwBYOZ");
+    printCommand("jcubic","https://jcubic.pl/me");
 }
 function contact(){
     printCommand("Email","mail@jantmueller.com")
