@@ -1,0 +1,1 @@
+This is the code for my [personal website](https://www.jantmueller.com). It is built using [jquery.terminal](https://github.com/jcubic/jquery.terminal) with the vintage theme from [codepen](https://codepen.io/jcubic/pen/BwBYOZ) by [jcubic](https://jcubic.pl/me).
