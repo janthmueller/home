@@ -86,5 +86,4 @@ function clear() {
 function test() {
     term.echo('test');
 }
-github('jcubic/jquery.terminal');
 cssVars(); // ponyfill
