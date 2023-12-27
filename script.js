@@ -17,13 +17,7 @@ var term = $('#terminal').terminal(function(command, term) {
     } else if (command !== '') {
         try {
             var result = __EVAL(command);
-            if (result && result instanceof $.fn.init) {
-                term.echo('test1')
-                term.echo('<#jQuery>');
-            } else if (result && typeof result === 'object') {
-                term.echo('test2')
-                tree(result);
-            } else if (result !== undefined) {
+            if (result !== undefined && ! (result instanceof $.fn.init)) {
                 __EVAL(command+'()');
             }
         } catch(e) {
@@ -91,7 +85,5 @@ function printCommand(command, description) {
 function clear() {
     term.clear();
 }
-function test() {
-    term.echo('test');
-}
+
 cssVars(); // ponyfill
